@@ -58,7 +58,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webpack.mix.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
+            <state relative-caret-position="374">
               <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
             </state>
           </provider>
@@ -179,7 +179,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-20" />
     <option name="y" value="8" />
     <option name="width" value="1346" />
@@ -196,28 +196,6 @@
             <path>
               <item name="app_firm" type="b2602c69:ProjectViewProjectNode" />
               <item name="app_firm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app_firm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app_firm" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app_firm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app_firm" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app_firm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app_firm" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app_firm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app_firm" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app_firm" type="b2602c69:ProjectViewProjectNode" />
@@ -276,12 +254,12 @@
       <workItem from="1552650590611" duration="284000" />
       <workItem from="1552650912802" duration="1782000" />
       <workItem from="1552818238536" duration="9225000" />
-      <workItem from="1552929498187" duration="14488000" />
+      <workItem from="1552929498187" duration="15165000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30570000" />
+    <option name="totallyTimeSpent" value="31247000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -294,13 +272,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.502551" side_tool="true" weight="0.2934947" />
       <window_info id="npm" order="1" sideWeight="0.502551" side_tool="true" weight="0.2934947" />
       <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49744898" visible="true" weight="0.2980333" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.22393163" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.22393163" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32820514" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -637,7 +614,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack.mix.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
+        <state relative-caret-position="374">
           <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
         </state>
       </provider>
