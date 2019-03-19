@@ -11,11 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('page_for_no_auth_user');
-});
+Route::get('/','IndexController@user_no_login');
 
-Route::get('page', function () {
-    return view('welcome');
-});
+Route::get('registration','IndexController@registr_user');
 
+Route::get('login','IndexController@login_user');

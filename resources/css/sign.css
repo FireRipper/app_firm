@@ -31,7 +31,7 @@
 .form-registration__bg__image:before{
     content:'';
     position: absolute;
-    background: url("../../static/img/sign_page/chemical_vessels/chemical_vessels.png") center;
+    background: url("/images/sign_page/chemical_vessels/chemical_vessels.png") center;
     transform-origin: center;
     top: 82%;
     left: 0;
@@ -42,7 +42,7 @@
 .form-authorization__bg__image:before {
     content:'';
     position: absolute;
-    background: url("../../static/img/sign_page/chemical_vessels/chemical_vessels.png") center;
+    background: url("/images/sign_page/chemical_vessels/chemical_vessels.png") center;
     transform-origin: center;
     top: 76%;
     left: 0;
