@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     //show main page
-    public function user_no_login() {
+    public function user_no_auth() {
         return view('page_for_no_auth_user');
     }
 
@@ -16,7 +16,7 @@ class IndexController extends Controller
 
         $titles = "ЛНР - Регистрация";
 
-        return view('registration')->with('titles', $titles);
+        return view('auth/registration')->with('titles', $titles);
     }
 
     //show login page
@@ -24,6 +24,6 @@ class IndexController extends Controller
 
         $titles = "ЛНР - Авторизация";
 
-        return view('login')->with('titles', $titles);
+        return view('auth/login')->with('titles', $titles);
     }
 }

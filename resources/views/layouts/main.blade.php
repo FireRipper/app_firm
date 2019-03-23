@@ -28,14 +28,14 @@
         </button>
         <div class="collapse navbar-collapse justify-content-lg-around" id="navbarNavAltMarkup" style>
             <nav class="navbar-nav text-center">
-                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="{{action('IndexController@user_no_login')}}">Главная</a>
+                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="{{url('/')}}">Главная</a>
                 <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="src/pages/services.php">Услуги</a>
                 <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="javascript:void(0);">Контакты</a>
                 <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="javascript:void(0);">Подача заявы</a>
             </nav>
             <div class="header-menu__btn d-flex">
-                <a href="{{action('IndexController@login_user')}}" id="login" class="header-menu__btn__navbar__login">Войти</a>
-                <a href="{{action('IndexController@registr_user')}}" id="registation" class="header-menu__btn__navbar__registration">Регистрация</a>
+                <a href="{{url('login')}}" id="login" class="header-menu__btn__navbar__login">Войти</a>
+                <a href="{{url('registration')}}" id="registation" class="header-menu__btn__navbar__registration">Регистрация</a>
             </div>
         </div>
     </nav>
@@ -50,7 +50,7 @@
             <div class="col col-sm-12 mb-sm-3 mt-sm-3 footer-menu__block__nav">
                 <ul class="nav justify-content-center flex-column flex-sm-row">
                     <li class="footer-menu__nav__item__color__text nav-item">
-                        <a class="nav-link" href="{{action('IndexController@user_no_login')}}">Главная</a>
+                        <a class="nav-link" href="{{url('/')}}">Главная</a>
                     </li>
                     <li class="footer-menu__nav__item__color__text nav-item">
                         <a class="nav-link" href="javascript:void(0);">Услуги</a>
