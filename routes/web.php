@@ -11,8 +11,12 @@
 |
 */
 
-Route::get('/','IndexController@user_no_login');
+Route::get('/','IndexController@user_no_auth');
 
-Route::get('registration','IndexController@registr_user');
+Route::get('auth/registration','IndexController@registr_user');
 
-Route::get('login','IndexController@login_user');
+Route::get('auth/login','IndexController@login_user');
+
+Route::get('auth/authorization','IndexController@login_user');
+
+Route::post('auth/register','RegisterController@postRegister');

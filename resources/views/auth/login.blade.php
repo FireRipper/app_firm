@@ -11,12 +11,12 @@
                 <div class="form-authorization__header text-uppercase pb-3"><h2>авторизация</h2></div>
                 <div class="form-group col-lg-12">
                     <label class="form-authorization__text__label__bluer" for="exampleInputEmail">Введите логин</label>
-                    <input id="form-authorization__user__email" type="user_email" class="form-control form-control__color__shadow__bluer"
+                    <input id="form-authorization__user__email" type="email" class="form-registration-authorization__style__input form-control form-control__color__shadow__bluer"
                            placeholder="Логин" name="f[e-mail]" required>
                 </div>
                 <div class="form-group col-lg-12">
                     <label class="form-authorization__text__label__bluer" for="exampleInputPassword">Введите пароль</label>
-                    <input type="password" class="form-control form-control__color__shadow__lighter" name="password" id="mypass"
+                    <input type="password" class="form-registration-authorization__style__input  form-control form-control__color__shadow__lighter" name="password"
                            placeholder="Пароль" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" maxlength="25" required>
                 </div>
                 <div class="form-row">

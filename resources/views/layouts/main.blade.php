@@ -34,8 +34,8 @@
                 <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="javascript:void(0);">Подача заявы</a>
             </nav>
             <div class="header-menu__btn d-flex">
-                <a href="{{url('login')}}" id="login" class="header-menu__btn__navbar__login">Войти</a>
-                <a href="{{url('registration')}}" id="registation" class="header-menu__btn__navbar__registration">Регистрация</a>
+                <a href="{{url('auth/login')}}" id="login" class="header-menu__btn__navbar__login">Войти</a>
+                <a href="{{url('auth/registration')}}" id="registation" class="header-menu__btn__navbar__registration">Регистрация</a>
             </div>
         </div>
     </nav>

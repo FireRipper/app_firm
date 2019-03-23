@@ -5,25 +5,24 @@
     box-shadow: var(--shadow__bold__bluer);
 }
 
-.form-registration__text__label__bluer, .form-registration__header h2, .form-authorization__text__label__bluer, .form-authorization__header h2{
+.form-registration__header h2{
+    text-align: right;
+    color: var(--bluer);
+}
+
+.form-registration__text__label__bluer, .form-authorization__text__label__bluer, .form-authorization__header h2{
     color: var(--bluer);
     text-align: center;
 }
 
-.form-registration input[type="password"], .form-registration input[type="user_email"],
-.form-registration input[type="user_name"], .form-registration input[type="user_surname"],
-.form-registration input[type="user_patronymic"], .form-registration input[type="user_verification_password"],
-.form-authorization input[type="user_email"], .form-authorization input[type="password"]{
+.form-registration-authorization__style__input {
     background: none;
     text-align: center;
     border-radius: .35rem;
     transition: 0.25s;
 }
 
-.form-registration input[type="user_name"], .form-registration input[type="user_surname"],
-.form-registration input[type="user_patronymic"], .form-authorization input[type="user_email"],
-.form-registration input[type="password"], .form-registration input[type="user_email"],
-.form-registration input[type="user_verification_password"], .form-authorization input[type="password"] {
+.form-registration-authorization__style__input {
     border: 1px solid var(--bluer);
     background-color: #43dbdb3d;
 }
@@ -73,6 +72,20 @@
     box-shadow: 0 0 0 0.2rem rgba(76, 209, 55,.35);
 }
 
+.form-registration__btn__link__login a{
+    background-color: #03A9F4;
+    color: var(--lighter);
+    padding: 5px 30px;
+    border-radius: .3rem;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+.form-registration__btn__link__login a:hover {
+    opacity: 1;
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(53, 146, 189,0.16), 0 3px 6px rgba(53, 146, 189,0.23);
+}
 
 @media screen and (max-width: 992px){
     .form-registration__btn__submit,
@@ -81,5 +94,17 @@
     }
     .form-registration__bg__image:before {
         top: 90%;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .form-registration__header h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .form-registration__header h2{
+        font-size: 1.2rem;
     }
 }

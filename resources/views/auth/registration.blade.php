@@ -4,13 +4,16 @@
 <div class="container">
     <div class="row justify-content-center vh-100 align-items-center">
         <div class="col col-lg-10 col-md-10">
-            <form class="form-registration needs-validation position-relative" action="javascript:void(0);" method="post" novalidate>
+            <form class="form-registration needs-validation position-relative" action="{{url('auth/register')}}" method="POST" novalidate>
                 <div class="form-registration__bg__image"></div>
-                <div class="form-registration__header text-uppercase pb-3"><h2>регистрация</h2></div>
+                <div class="form-row pb-4">
+                    <div class="col-6 form-registration__btn__link__login"><a href="{{ url('auth/login') }}">Вход</a></div>
+                    <div class="col-6 form-registration__header text-uppercase"><h2>регистрация</h2></div>
+                </div>
                 <div class="form-row">
                     <div class="form-group col-lg-4">
                         <label class="form-registration__text__label__bluer" for="exampleInputName">Введите имя</label>
-                        <input id="form-registration__name" type="user_name" class="form-control form-control__color__shadow__bluer" id="inputName"
+                        <input id="form-registration__name" type="text" name="first_name" class="form-registration-authorization__style__input form-control form-control__color__shadow__bluer"
                                placeholder="Имя" pattern="[а-яА-ЯёЁ, a-zA-Z]{2,64}" required>
                         <div class="invalid-feedback">
                             Введите имя, используя русские или латинские буквы!
@@ -18,7 +21,7 @@
                     </div>
                     <div class="form-group col-lg-4">
                         <label class="form-registration__text__label__bluer" for="exampleInputSurname">Введите фамилию</label>
-                        <input type="user_surname" class="form-control form-control__color__shadow__bluer" id="inputSurname"
+                        <input type="text" name="middle_name" class="form-registration-authorization__style__input form-control form-control__color__shadow__bluer"
                                placeholder="Фамилия" pattern="[а-яА-ЯёЁ, a-zA-Z]{2,64}" required>
                         <div class="invalid-feedback">
                             Введите фамилию, используя русские или латинские буквы!
@@ -26,7 +29,7 @@
                     </div>
                     <div class="form-group col-lg-4">
                         <label class="form-registration__text__label__bluer" for="exampleInputPatronymic">Введите отчество</label>
-                        <input type="user_patronymic" class="form-control form-control__color__shadow__bluer" id="inputPatronymic"
+                        <input type="text" name="last_name" class="form-registration-authorization__style__input form-control form-control__color__shadow__bluer"
                                placeholder="Отчество" pattern="[а-яА-ЯёЁ, a-zA-Z]{2,64}" required>
                         <div class="invalid-feedback">
                             Введите отчество, используя русские или латинские буквы!
@@ -36,15 +39,15 @@
                 <div class="form-row">
                     <div class="form-group col-lg-12">
                         <label class="form-registration__text__label__bluer" for="exampleInputEmail">E-mail</label>
-                        <input type="user_email" class="form-control form-control__color__shadow__bluer" id="inputEmail"
-                               placeholder="E-mail" name="f[e-mail]" required>
+                        <input id="email" type="email" class="form-registration-authorization__style__input form-control form-control__color__shadow__bluer"
+                               placeholder="E-mail" name="email" required>
                         <div class="invalid-feedback">
                             Введите Ваш e-mail, например, example@gmail.com (.ru, .ua и т.д.)!
                         </div>
                     </div>
                     <div class="form-group col-lg-6">
                         <label class="form-registration__text__label__bluer" for="exampleInputPassword">Придумайте пароль</label>
-                        <input type="password" class="form-control form-control__color__shadow__bluer" name="password" id="mypass"
+                        <input type="password" class="form-registration-authorization__style__input form-control form-control__color__shadow__bluer" name="password"
                                placeholder="Придумайте пароль" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" maxlength="25"
                                aria-describedby="passwordHelpBlock" required>
                         <small id="passwordHelpBlock" class="form-text text-muted">
@@ -56,8 +59,8 @@
                     </div>
 
                     <div class="form-group col-lg-6">
-                        <label class="  form-registration__text__label__bluer" for="exampleInputVerification">Повторите пароль</label>
-                        <input type="password" class="form-control form-control__color__shadow__bluer" name="verification_password" id="inputVerification"
+                        <label class="  form-registration__text__label__bluer" for="confirm_password">Повторите пароль</label>
+                        <input type="password" class="form-registration-authorization__style__input form-control form-control__color__shadow__bluer" name="password_confirmation" id="confirm_password"
                                placeholder="Повторите пароль" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" maxlength="25" required>
                         <div class="invalid-feedback">
                             Повторите правильно пароль!

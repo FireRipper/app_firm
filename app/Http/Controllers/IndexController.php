@@ -26,4 +26,9 @@ class IndexController extends Controller
 
         return view('auth/login')->with('titles', $titles);
     }
+
+    //show success registration user
+    public function getRegister(){
+        return view('emails/register');
+    }
 }
