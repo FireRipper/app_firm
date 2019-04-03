@@ -8,9 +8,10 @@
     <meta name="description"
           content="Установка охранной системы сигнализации,
            видеонеблюдение, мини АТС, видеодомофоны, система контроля доступа!">
-    <title>Лаборатория нестандартных решений</title>
+    <title>{{$titles}}</title>
     <link rel="shortcut icon" href="{{asset('/favicon.ico')}}" type="image/x-icon">
     <link rel="icon" href="{{asset('/favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/all.css')}}" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -18,7 +19,7 @@
 <body>
 <header>
     <nav id="header-menu" class="navbar navbar-expand-lg for-header-navbar navbar-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{{url('/')}}">
             <img id="navbar-brand__logo__img" src="{{asset('images/page/logo/logo-LNR.svg')}}" alt="logo">
             <span class="header-menu__logo__text">Лаборатория нестандартных решений</span>
         </a>
@@ -29,9 +30,9 @@
         <div class="collapse navbar-collapse justify-content-lg-around" id="navbarNavAltMarkup" style>
             <nav class="navbar-nav text-center">
                 <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="{{url('/')}}">Главная</a>
-                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="src/pages/services.php">Услуги</a>
-                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="javascript:void(0);">Контакты</a>
-                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="javascript:void(0);">Подача заявы</a>
+                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="{{url('services')}}">Услуги</a>
+                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="{{url('contacts')}}">Контакты</a>
+                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="{{url('request')}}">Подача заявы</a>
             </nav>
             <div class="header-menu__btn d-flex">
                 <a href="{{url('auth/login')}}" id="login" class="header-menu__btn__navbar__login">Войти</a>
@@ -43,7 +44,9 @@
 <button id="btn-go__to__top" style="display: none;"><i class="fas fa-arrow-up"></i></button>
 
     @yield('main_content')
-
+    @yield('services_content')
+    @yield('request_content')
+    @yield('contact_content')
 <footer id="footer" class="footer border-top text-center">
     <div class="container-fluid">
         <div class="row">
@@ -53,13 +56,13 @@
                         <a class="nav-link" href="{{url('/')}}">Главная</a>
                     </li>
                     <li class="footer-menu__nav__item__color__text nav-item">
-                        <a class="nav-link" href="javascript:void(0);">Услуги</a>
+                        <a class="nav-link" href="{{url('services')}}">Услуги</a>
                     </li>
                     <li class="footer-menu__nav__item__color__text nav-item">
-                        <a class="nav-link" href="javascript:void(0);">Контакты</a>
+                        <a class="nav-link" href="{{url('contacts')}}">Контакты</a>
                     </li>
                     <li class="footer-menu__nav__item__color__text nav-item">
-                        <a class="nav-link" href="javascript:void(0);">Подача заявы</a>
+                        <a class="nav-link" href="{{url('request')}}">Подача заявы</a>
                     </li>
                 </ul>
             </div>

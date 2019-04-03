@@ -268,27 +268,14 @@ header {
 
 #content {
     flex-grow: 1;
-    background: linear-gradient(to top, #ecf0f1 0%, #ecf0f1 50%, #2f3542 50%, #ecf0f1 50%, #2f3542 50%);
-    background: -ms-linear-gradient(to top, #ecf0f1 0%, #ecf0f1 50%, #2f3542 50%, #ecf0f1 50%, #2f3542 50%);
-    background: -moz-linear-gradient(to top, #ecf0f1 0%, #ecf0f1 50%, #2f3542 50%, #ecf0f1 50%, #2f3542 50%);
 }
 
-.content-about-firm__text__header {
-    color: var(--darker);
-    background-color: var(--lighter);
-    margin: 1.4rem 0;
-    border-radius: 1rem;
-    transition: all .5s;
+.content-about-firm__us__h1 {
+    font-size: calc(2.3rem - 50%);
 }
 
 .content-about-firm__text__paragraph p{
-    color: var(--lighter);
-}
-
-.content-about-firm__us__image img{
-    width: 230px;
-    border-radius: 10%;
-    box-shadow: var(--shadow__bold__lighter);
+    color: var(--darker);
 }
 
                 /*  cards-services  */
@@ -564,12 +551,6 @@ header {
 }
 
 @media screen and (max-width: 992px){
-    .content-about-firm__text__header h1{
-        font-size: 1.5rem;
-    }
-    .content-about-firm__us__image img{
-        width: 190px;
-    }
     .content-about-firm__text__paragraph p{
         font-size: .9rem;
     }
@@ -584,9 +565,6 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    .content-about-firm__text__header h1{
-        font-size: 1.4rem;
-    }
     .content-team-card__block__image img {
         width: 200px;
     }

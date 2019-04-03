@@ -10473,11 +10473,13 @@ return jQuery;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+var _this = undefined;
+
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#btn-go__to__top').fadeOut();
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).scroll(function () {
-    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).scrollTop() > 1000) {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(_this).scrollTop() > 1000) {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('#btn-go__to__top').fadeIn();
     } else {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('#btn-go__to__top').fadeOut();
@@ -10488,6 +10490,37 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
       scrollTop: 0
     }, 800);
   });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#form-registration-submit').click(function () {
+    var password = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#password').val();
+    var confirm_password = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#confirm_password').val();
+
+    if (password === '' || confirm_password === '' || password !== confirm_password) {
+      console.log('password isn\'t confirm');
+    } else {
+      console.log('password confirm');
+    }
+  });
+
+  function getPassword() {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
+      type: 'POST',
+      url: '/getmsg',
+      data: {
+        'password': password,
+        'confirm_password': confirm_password
+      },
+      headers: {
+        'X-CSRF-Token': jquery__WEBPACK_IMPORTED_MODULE_0___default()('meta[name="csrf-token"]').attr('content')
+      },
+      success: function success(data) {
+        /*if (password === confirm_password) {
+        	alert('Пароль потверждён')
+        } else {
+        	alert('Введите пароль повторно правильно!')
+        }*/
+      }
+    });
+  }
 });
 
 /***/ }),
@@ -10510,7 +10543,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.getElementsByClassName('needs-validation'); // Loop over them and prevent submission
 
-    var validation = Array.prototype.filter.call(forms, function (form) {
+    Array.prototype.filter.call(forms, function (form) {
       form.addEventListener('submit', function (event) {
         if (form.checkValidity() === false) {
           event.preventDefault();
@@ -10532,8 +10565,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\XXAMPP\htdocs\www\app_firm\resources\js\global.js */"./resources/js/global.js");
-module.exports = __webpack_require__(/*! C:\XXAMPP\htdocs\www\app_firm\resources\js\sign.js */"./resources/js/sign.js");
+__webpack_require__(/*! C:\xampp\htdocs\www\app_firm\resources\js\global.js */"./resources/js/global.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\www\app_firm\resources\js\sign.js */"./resources/js/sign.js");
 
 
 /***/ })

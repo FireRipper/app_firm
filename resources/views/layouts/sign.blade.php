@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="shortcut icon" href="{{asset('/favicon.ico')}}" type="image/x-icon">
     <link rel="icon" href="{{asset('/favicon.ico')}}" type="image/x-icon">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/all.css')}}" type="text/css">
     <title>{{$titles}}</title>
 </head>

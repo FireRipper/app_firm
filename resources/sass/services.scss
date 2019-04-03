@@ -1,0 +1,38 @@
+$blue: #339999;
+
+
+#service-content {
+  .service-content__block__background {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    .service-content__background {
+      &:before{
+        content: '';
+        position: absolute;
+        transform-origin: center;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: url("/images/services_content/all.svg") no-repeat;
+        min-height: 500px;
+      }
+    }
+  }
+}
+
+.service-content__h2__header{
+  h2{
+    padding: calc(11px + 18%);
+    font-size: 3.1vw;
+    color: $blue;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

@@ -4,15 +4,10 @@
 @section('main_content')
 <div id="content" class="content">
     <div class="container">
-        <div id="content-about-firm" class="row">
-            <div class="content-about-firm__text__header col col-12 text-center">
-                <h1>О фирме "Лаборатория нестандартных решений"</h1>
-            </div>
-            <div class="content-about-firm__us__image col-md-3 col-sm-4 text-center mb-2 align-self-center">
-                <img src="{{asset('images/main_content/image__about__us_cr.jpg')}}" alt="img_about_us" title="О фирме">
-            </div>
-            <div class="content-about-firm__text__paragraph align-self-center col col-md-9 col-sm-8">
-                <p class="p-3">Наша фирма занимается установкой систем видеонаблюдения, монтаж охранных систем и сигнализации
+        <div id="content-about-firm" class="row m-2 ">
+            <div class="content-about-firm__text__paragraph align-self-center col-12">
+                <h1 class="content-about-firm__us__h1 p-3">О фирме</h1>
+                <p class="p-sm-3 pt-0">Наша фирма занимается установкой систем видеонаблюдения, монтаж охранных систем и сигнализации
                     как со сдачей на пульт охраны так и автономные, установка систем контроля
                     доступа для организации контрольно-пропускного режима на любых объектах, установка домофонов,
                     видеодомофонов, построение и монтаж телефонных и компьютерных сетей, установка офисных

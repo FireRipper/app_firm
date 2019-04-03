@@ -8,7 +8,10 @@ class IndexController extends Controller
 {
     //show main page
     public function user_no_auth() {
-        return view('page_for_no_auth_user');
+
+        $titles = 'Лаборатория нестандартных решений';
+
+        return view('page_for_no_auth_user')->with('titles', $titles);
     }
 
     //show login registration
@@ -30,5 +33,29 @@ class IndexController extends Controller
     //show success registration user
     public function getRegister(){
         return view('emails/register');
+    }
+
+    //show services page
+    public function getServices(){
+
+        $titles = 'Сервисы - Лаборатория нестандртных решений';
+
+        return view('services')->with('titles', $titles);
+    }
+
+    //show contact page
+    public function getContact(){
+
+        $titles = 'Контакты - Лаборатория нестандартных решений';
+
+        return view('contact')->with('titles', $titles);
+    }
+
+    //show request page
+    public function getRequest(){
+
+        $titles = 'Подача заявки - Лаборатория нестандартных решений';
+
+        return view('request')->with('titles', $titles);
     }
 }
