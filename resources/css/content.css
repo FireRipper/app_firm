@@ -12,12 +12,21 @@
 
                 /*  cards-services  */
 
+.content-services__text__header:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 42%;
+    border-bottom: 2px solid #33999940;
+    z-index: -1;
+}
+
 .content-services__text__header h3{
     display: inline-block;
-    color: var(--darker);
-    background-color: var(--lighter);
-    border-radius: .65rem;
-    border: 2px solid var(--lighter);
+    color: #339999;
+    background-color: #fff;
+    cursor: context-menu;
 }
 
 .content-services__info__block{
@@ -132,12 +141,21 @@
     box-shadow: var(--shadow__darker);
 }
 
+.content-team-card__header:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 42%;
+    border-bottom: 2px solid #33999940;
+    z-index: -1;
+}
+
 .content-team-card__header h3{
     display: inline-block;
-    color: var(--darker);
-    background-color: var(--lighter);
-    border-radius: 1rem;
-    border: 2px solid var(--lighter);
+    color: #339999;
+    background-color: #fff;
+    cursor: context-menu;
 }
 
 .content-team-card__block__image {
@@ -222,23 +240,22 @@
 
 .block-comments__btn__login a{
     text-decoration: none;
-    color: var(--lighter);
-    background-color: var(--bluer);
+    color: var(--bluer);
+    background-color: #33999917;
+    border: 1px solid var(--bluer);
     padding: .5rem 2rem;
     display: inline-block;
     font-weight: 400;
     white-space: nowrap;
     vertical-align: middle;
     user-select: none;
-    border: 1px solid transparent;
     border-radius: .7rem;
     line-height: 1.5;
     margin: .3rem;
     text-align: center;
     letter-spacing: 1px;
     font-size: 1.1rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color
-    .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: .7s;
 }
 
 .block-comments__btn__login a:not(:disabled):not(.disabled) {
@@ -252,9 +269,8 @@
 }
 
 .block-comments__btn__login a:hover {
-    background: var(--light);
-    border: 1px solid var(--bluer);
-    color: var(--bluer);
+    background: var(--bluer);
+    color: var(--light);
     box-shadow: 0 0 0 0.2rem rgba(51, 153, 153,.35);
 }
 

@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\CodeController;
 use App\Code;
 use App\User;
 use Illuminate\Support\Facades\Mail;
@@ -47,13 +46,13 @@ class RegisterController extends Controller
     /**
      * Get a validator for an incoming registration request.
      *
-     * @param  array  $data
+     * @param  array $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'text' =>['required','string'],
+            'text' => ['required', 'string'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
@@ -62,46 +61,17 @@ class RegisterController extends Controller
     /**
      * Create a new user instance after a valid registration.
      *
-     * @param  array  $data
+     * @param  array $data
      * @return \App\User
      */
     protected function create(array $data)
     {
         return User::create([
-            'first_name' =>$data['first_name'],
-            'middle_name' =>$data['middle_name'],
-            'last_name' =>$data['last_name'],
+            'first_name' => $data['first_name'],
+            'middle_name' => $data['middle_name'],
+            'last_name' => $data['last_name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
     }
-
-    /**
-     * @param Request $request
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
-     */
-   public function postRegister(Request $request)
-    {
-        $validator = $this->validator($request->all());
-        if($validator->fails()){
-            return redirect('auth/register')->withErrors($validator,'login');
-        }
-        /*$user = $this->create($request->all());
-
-        $code = CodeController::generateCode(8);
-
-        Code::create([
-            'user_id' => $user,
-            'code' => $code,
-        ]);*/
-
-        /*$url = url('/').'/auth/activate?id='.$user.'&code='.$code;
-        Mail::send('emails.register', array('url'=>$url), function($massage) use ($request)
-        {
-            $massage->to($request->email)->subject('Регистрация');
-        });*/
-
-        return print_r('Регистрация прошла успешно, на Ваш email отправлено письмо со ссылкой для активации аккаунта') ;
-    }
-
 }

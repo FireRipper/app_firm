@@ -12,8 +12,78 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12"></div>
+        <div id="service-content-info-card" class="row justify-content-center mt-2">
+            <div class="service-content-info-card__style__all__block col-lg-8 rounded">
+                <h3>Установка Систем Видеонаблюдения</h3>
+                <article>
+                    <p>Локальная система — система, область действия и применения которой ограничена географически территорией здания, предприятия, организации и т. п. Централизованная система имеет один центр и некоторое количество видеокамер. Децентрализованная система представляет себя как совокупность нескольких централизованных, объединенных логически в одну структуру,
+                    но физически разделенных и способных функционировать независимо. Наибольшее распространение получили стандарты.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, consequuntur deleniti dolorem dolores
+                    eius illo labore modi neque pariatur porro reiciendis repellat repudiandae sequi sint, soluta, temporibus veniam? Repellat, tempora!</p>
+                </article>
+                <div class="row">
+                    <a href="javascript:void(0);" class="service-content-info-card__style__apply__request col-12">
+                            Подать заяву
+                    </a>
+                </div>
+            </div>
+            <div class="service-content-info-card__style__all__block col-lg-8 rounded">
+                <h3>Установка Систем Видеонаблюдения</h3>
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, consequuntur deleniti dolorem dolores
+                    eius illo labore modi neque pariatur porro reiciendis repellat repudiandae sequi sint, soluta, temporibus veniam? Repellat, tempora!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, consequuntur deleniti dolorem dolores
+                    eius illo labore modi neque pariatur porro reiciendis repellat repudiandae sequi sint, soluta, temporibus veniam? Repellat, tempora!
+                </article>
+                <div class="row">
+                    <a href="javascript:void(0);" class="service-content-info-card__style__apply__request col-12">
+                        Подать заяву
+                    </a>
+                </div>
+            </div>
+            <div class="service-content-info-card__style__all__block col-lg-8 rounded">
+                <h3>Установка Систем Видеонаблюдения</h3>
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, consequuntur deleniti dolorem dolores
+                    eius illo labore modi neque pariatur porro reiciendis repellat repudiandae sequi sint, soluta, temporibus veniam? Repellat, tempora!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, consequuntur deleniti dolorem dolores
+                    eius illo labore modi neque pariatur porro reiciendis repellat repudiandae sequi sint, soluta, temporibus veniam? Repellat, tempora!
+                </article>
+                <div class="row">
+                    <a href="javascript:void(0);" class="service-content-info-card__style__apply__request col-12">
+                        Подать заяву
+                    </a>
+                </div>
+            </div>
+            <div class="service-content-info-card__style__all__block col-lg-8 rounded">
+                <h3>Установка Систем Видеонаблюдения</h3>
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, consequuntur deleniti dolorem dolores
+                    eius illo labore modi neque pariatur porro reiciendis repellat repudiandae sequi sint, soluta, temporibus veniam? Repellat, tempora!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, consequuntur deleniti dolorem dolores
+                    eius illo labore modi neque pariatur porro reiciendis repellat repudiandae sequi sint, soluta, temporibus veniam? Repellat, tempora!
+                </article>
+                <div class="row">
+                    <a href="javascript:void(0);" class="service-content-info-card__style__apply__request col-12">
+                        Подать заяву
+                    </a>
+                </div>
+            </div>
+            <div class="service-content-info-card__style__all__block col-lg-8 rounded">
+                <h3>Установка Систем Видеонаблюдения</h3>
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, consequuntur deleniti dolorem dolores
+                    eius illo labore modi neque pariatur porro reiciendis repellat repudiandae sequi sint, soluta, temporibus veniam? Repellat, tempora!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, consequuntur deleniti dolorem dolores
+                    eius illo labore modi neque pariatur porro reiciendis repellat repudiandae sequi sint, soluta, temporibus veniam? Repellat, tempora!
+                </article>
+                <div class="row">
+                    <a href="javascript:void(0);" class="service-content-info-card__style__apply__request col-12">
+                        Подать заяву
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

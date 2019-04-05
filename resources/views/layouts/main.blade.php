@@ -29,10 +29,10 @@
         </button>
         <div class="collapse navbar-collapse justify-content-lg-around" id="navbarNavAltMarkup" style>
             <nav class="navbar-nav text-center">
-                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="{{url('/')}}">Главная</a>
-                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="{{url('services')}}">Услуги</a>
-                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="{{url('contacts')}}">Контакты</a>
-                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="{{url('request')}}">Подача заявы</a>
+                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="{{url('/')}}"><i class="fas fa-home"></i> Главная</a>
+                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="{{url('services')}}"><i class="fas fa-cog"></i> Услуги</a>
+                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="{{url('contacts')}}"><i class="far fa-address-book"></i> Контакты</a>
+                <a class="header-menu__navbar__collapse__btn nav-item nav-link ml-2 mt-1" href="{{url('request')}}"><i class="fas fa-scroll"></i> Подача заявы</a>
             </nav>
             <div class="header-menu__btn d-flex">
                 <a href="{{url('auth/login')}}" id="login" class="header-menu__btn__navbar__login">Войти</a>

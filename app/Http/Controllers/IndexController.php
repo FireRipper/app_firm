@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     //show main page
-    public function user_no_auth() {
+    public function user_no_auth()
+    {
 
         $titles = 'Лаборатория нестандартных решений';
 
@@ -15,7 +16,8 @@ class IndexController extends Controller
     }
 
     //show login registration
-    public function registr_user(){
+    public function registr_user()
+    {
 
         $titles = "ЛНР - Регистрация";
 
@@ -23,7 +25,8 @@ class IndexController extends Controller
     }
 
     //show login page
-    public function login_user(){
+    public function login_user()
+    {
 
         $titles = "ЛНР - Авторизация";
 
@@ -31,20 +34,23 @@ class IndexController extends Controller
     }
 
     //show success registration user
-    public function getRegister(){
+    public function getRegister()
+    {
         return view('emails/register');
     }
 
     //show services page
-    public function getServices(){
-
+    public function getServices()
+    {
+        config('app.locale');
         $titles = 'Сервисы - Лаборатория нестандртных решений';
 
         return view('services')->with('titles', $titles);
     }
 
     //show contact page
-    public function getContact(){
+    public function getContact()
+    {
 
         $titles = 'Контакты - Лаборатория нестандартных решений';
 
@@ -52,7 +58,8 @@ class IndexController extends Controller
     }
 
     //show request page
-    public function getRequest(){
+    public function getRequest()
+    {
 
         $titles = 'Подача заявки - Лаборатория нестандартных решений';
 

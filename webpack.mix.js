@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require('laravel-mix')
 
 /*
  |--------------------------------------------------------------------------
@@ -12,17 +12,17 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .js(['resources/js/global.js', 'resources/js/sign.js'], 'public/js/main.js')
-   .sass('resources/sass/app.scss', 'public/css')
-  .sass('resources/sass/bootstrap.scss', 'public/css')
-    .styles(['resources/css/global.css','resources/css/header.css',
-        'resources/css/content.css','resources/css/footer.css',
-        'resources/css/sign.css'], 'public/css/all.css')
-    .options({
-        processCssUrls: false
-    })
-    .copyDirectory('resources/images', 'public/images')
-    .browserSync('http://securityfirm/');
+	.js(['resources/js/global.js', 'resources/js/sign.js'], 'public/js/main.js')
+	.sass('resources/sass/app.scss', 'public/css')
+	.sass('resources/sass/bootstrap.scss', 'public/css')
+	.styles(['resources/css/global.css', 'resources/css/header.css',
+		'resources/css/content.css', 'resources/css/footer.css',
+		'resources/css/sign.css'], 'public/css/all.css')
+	.options({
+		processCssUrls: false
+	})
+	.copyDirectory('resources/images', 'public/images')
+	.browserSync('http://securityfirm/')
 
 
 

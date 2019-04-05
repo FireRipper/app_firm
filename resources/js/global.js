@@ -1,8 +1,9 @@
 import $ from 'jquery'
+import readmore from 'readmore-js/readmore.min'
+import axios from 'axios'
 
 $(document).ready(() => {
-	$('#btn-go__to__top').fadeOut()
-	$(window).scroll(() => {
+	$(window).scroll(function () {
 		if ($(this).scrollTop() > 1000) {
 			$('#btn-go__to__top').fadeIn()
 		} else {
@@ -10,37 +11,14 @@ $(document).ready(() => {
 		}
 	})
 
-	$('#btn-go__to__top').click(() =>{
+	$('#btn-go__to__top').click(() => {
 		$('html, body').animate({ scrollTop: 0 }, 800)
 	})
 
-	$('#form-registration-submit').click(()=>{
-		const password = $('#password').val();
-		const confirm_password = $('#confirm_password').val();
-
-		if (password === '' || confirm_password ==='' || password !== confirm_password){
-			console.log('password isn\'t confirm');
-
-		} else {
-			console.log('password confirm');
-		}
+	$('article').readmore({
+		collapsedHeight: 70,
+		moreLink: '<a href="#">Показать текст  <i class="fas fa-angle-double-right"></i></a>',
+		lessLink: '<a href="#">Скрыть <i class="fas fa-angle-double-up"></i></a>'
 	})
-
-	function getPassword() {
-		$.ajax({
-			type:'POST',
-			url:'/getmsg',
-			data: {'password':password, 'confirm_password':confirm_password},
-			headers: {'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')},
-			success:(data)=>{
-
-				/*if (password === confirm_password) {
-					alert('Пароль потверждён')
-				} else {
-					alert('Введите пароль повторно правильно!')
-				}*/
-			}
-		});
-	}
 })
 
