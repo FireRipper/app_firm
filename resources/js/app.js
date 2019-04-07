@@ -6,4 +6,6 @@
  */
 require('./bootstrap.min');
 
+require('readmore-js/readmore')
+
 

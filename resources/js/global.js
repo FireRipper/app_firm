@@ -1,16 +1,24 @@
 import $ from 'jquery'
+import readmore from 'readmore-js/readmore.min'
+import axios from 'axios'
 
-$(document).ready(function () {
-    $('#btn-go__to__top').fadeOut();
-    $(window).scroll(function () {
-        if($(this).scrollTop() > 1000) {
-            $('#btn-go__to__top').fadeIn();
-        } else {
-            $('#btn-go__to__top').fadeOut();
-        }
-    });
+$(document).ready(() => {
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1000) {
+			$('#btn-go__to__top').fadeIn()
+		} else {
+			$('#btn-go__to__top').fadeOut()
+		}
+	})
 
-    $('#btn-go__to__top').click(function () {
-        $('html, body').animate({scrollTop : 0},800);
-    })
-});
+	$('#btn-go__to__top').click(() => {
+		$('html, body').animate({ scrollTop: 0 }, 800)
+	})
+
+	$('article').readmore({
+		collapsedHeight: 70,
+		moreLink: '<a href="#">Показать текст  <i class="fas fa-angle-double-right"></i></a>',
+		lessLink: '<a href="#">Скрыть <i class="fas fa-angle-double-up"></i></a>'
+	})
+})
+
