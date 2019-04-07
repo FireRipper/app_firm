@@ -36,7 +36,7 @@
             </nav>
             <div class="header-menu__btn d-flex">
                 <a href="{{url('auth/login')}}" id="login" class="header-menu__btn__navbar__login">Войти</a>
-                <a href="{{url('auth/registration')}}" id="registation" class="header-menu__btn__navbar__registration">Регистрация</a>
+                <a href="{{url('auth/registration')}}" id="registration" class="header-menu__btn__navbar__registration">Регистрация</a>
             </div>
         </div>
     </nav>
