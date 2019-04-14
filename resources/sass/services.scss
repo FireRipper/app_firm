@@ -28,7 +28,7 @@ $blue: #339999;
       right: 0;
       left: 0;
       bottom: 0;
-      background: url("/images/services_content/software.jpg") no-repeat;
+      background: url("/images/services_content/software1.jpg") no-repeat;
       background-size: cover;
     }
 
@@ -42,7 +42,7 @@ $blue: #339999;
       right: 0;
       left: 0;
       bottom: 0;
-      background: #515455;
+      background: #1783f1;
       opacity: .5;
     }
   }
@@ -66,7 +66,6 @@ $blue: #339999;
   box-shadow: var(--shadow__bold__darker);
 
   .service-content-info-card__style__all__block {
-    border: 1px solid #79a1eb;
     background: #fbfbfb;
     margin-bottom: 5px;
 
@@ -89,12 +88,17 @@ $blue: #339999;
       color: #00cade;
       border: 1px solid #00cade;
       background: #00cade30;
-      width: 100%;
+      width: 25%;
       text-align: center;
       border-radius: 0.25rem;
       padding: 5px 0;
       margin: 15px 0 10px 0;
       font-size: calcFluidFontSize(14, 16, 480, 1280);
+      @media screen and (max-width:992px) {
+        &{
+          width: 50%;
+        }
+      }
     }
 
     .fa-angle-double-right {
@@ -109,17 +113,26 @@ $blue: #339999;
 
     .service-content-info-card__style__apply__request {
       font-size: calcFluidFontSize(14, 18, 480, 1280);
-      padding: 10px 0 15px 10px;
-      border-top: 1px solid $blue;
       transition: 0.7s;
 
       &:hover {
         text-decoration: none;
-        color: #f7f7f7;
-        opacity: .5;
-        background: $blue;
-        border-radius: 0.25rem;
       }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .service-content-info-card__image{
+    img {
+      height: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-content-info-card__image{
+    img {
+      height: 70px;
     }
   }
 }

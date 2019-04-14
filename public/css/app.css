@@ -28,7 +28,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background: url("/images/services_content/software.jpg") no-repeat;
+  background: url("/images/services_content/software1.jpg") no-repeat;
   background-size: cover;
 }
 .service-content__block__background .service-content__background:after {
@@ -41,7 +41,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background: #515455;
+  background: #1783f1;
   opacity: 0.5;
 }
 
@@ -61,7 +61,6 @@
   box-shadow: var(--shadow__bold__darker);
 }
 #service-content-info-card .service-content-info-card__style__all__block {
-  border: 1px solid #79a1eb;
   background: #fbfbfb;
   margin-bottom: 5px;
 }
@@ -82,12 +81,17 @@
   color: #00cade;
   border: 1px solid #00cade;
   background: #00cade30;
-  width: 100%;
+  width: 25%;
   text-align: center;
   border-radius: 0.25rem;
   padding: 5px 0;
   margin: 15px 0 10px 0;
   font-size: calc(0.0025 * 100vw + 12.8px);
+}
+@media screen and (max-width: 992px) {
+  #service-content-info-card .service-content-info-card__style__all__block a[data-readmore-toggle] {
+    width: 50%;
+  }
 }
 #service-content-info-card .service-content-info-card__style__all__block .fa-angle-double-right {
   padding: 0 0 0 5px;
@@ -99,18 +103,22 @@
 }
 #service-content-info-card .service-content-info-card__style__all__block .service-content-info-card__style__apply__request {
   font-size: calc(0.005 * 100vw + 11.6px);
-  padding: 10px 0 15px 10px;
-  border-top: 1px solid #339999;
   transition: 0.7s;
 }
 #service-content-info-card .service-content-info-card__style__all__block .service-content-info-card__style__apply__request:hover {
   text-decoration: none;
-  color: #f7f7f7;
-  opacity: 0.5;
-  background: #339999;
-  border-radius: 0.25rem;
 }
 
+@media screen and (max-width: 992px) {
+  .service-content-info-card__image img {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service-content-info-card__image img {
+    height: 70px;
+  }
+}
 .contact-content__block__background {
   -webkit-perspective: 1px;
           perspective: 1px;
