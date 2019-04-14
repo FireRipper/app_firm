@@ -58,7 +58,6 @@
   background: #fafdfa;
   padding: 30px 3px;
   margin: -20px -15px;
-  border-radius: 20px;
   box-shadow: var(--shadow__bold__darker);
 }
 #service-content-info-card .service-content-info-card__style__all__block {
@@ -222,4 +221,69 @@
 }
 .contact-content__box .contact-content-box__for__tel .contact-content-box__tel:hover {
   text-decoration: none;
+}
+
+#request-content {
+  border: 1px solid #eaf0f6;
+}
+#request-content .request-content-header-h1 {
+  color: var(--darker);
+  font-size: calc(0.01375 * 100vw + 10.4px);
+}
+#request-content .request-content__text {
+  background: #dc354524;
+  border: 1px solid var(--danger);
+  font-size: calc(0.00125 * 100vw + 12.4px);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#request-content .request-content__text .request-content__link__auth {
+  font-size: calc(0.0025 * 100vw + 12.8px);
+  background-color: #03A9F4;
+  color: var(--lighter);
+  padding: 5px 30px;
+  border-radius: 0.3rem;
+  opacity: 0.7;
+  transition: 0.4s;
+}
+#request-content .request-content__text .request-content__link__auth:hover {
+  opacity: 1;
+  box-shadow: var(--shadow__bold__darker);
+  text-decoration: none;
+  cursor: pointer;
+}
+#request-content .request-content__h3 {
+  color: var(--darker);
+  font-size: calc(0.0075 * 100vw + 14.4px);
+}
+#request-content .request-content__h3__request {
+  color: var(--darker);
+  font-size: calc(0.01 * 100vw + 15.2px);
+}
+#request-content .request-content__h3__request > i {
+  color: #03A9F4;
+  opacity: 0.7;
+}
+#request-content .request-content__what__do__li, #request-content .request-content__what__do__p {
+  color: var(--darker);
+}
+#request-content .request-content__what__do__li {
+  font-size: calc(0.00375 * 100vw + 11.2px);
+}
+#request-content #request-content__form__request .request-content__form {
+  border: 1px solid #eaf0f6;
+}
+#request-content #request-content__form__request .form-request__style__input {
+  border-color: var(--bluer);
+  background: #00cade12;
+}
+#request-content #request-content__form__request .form-request__text__label__bluer {
+  color: var(--darker);
+}
+
+.request-content__image__man__write__request {
+  min-height: 200px;
+  margin: 0 1.3rem 0;
+  width: 100%;
+  background: url("/images/request_content/request_man.svg") no-repeat;
 }

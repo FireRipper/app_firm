@@ -25,10 +25,6 @@
                             но физически разделенных и способных функционировать независимо. Наибольшее распространение
                             получили стандарты.
                         </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, consequuntur deleniti
-                            dolorem dolores
-                            eius illo labore modi neque pariatur porro reiciendis repellat repudiandae sequi sint,
-                            soluta, temporibus veniam? Repellat, tempora!</p>
                     </article>
                     <div class="row">
                         <a href="javascript:void(0);" class="service-content-info-card__style__apply__request col-12">

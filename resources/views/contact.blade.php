@@ -47,7 +47,7 @@
                         <p class="col-12 contact-content-box__p">
                             В нашей работе происходит много интересных вещей, не пропусти их и загляни в нашу группу в Facebook.
                         </p>
-                        <div class="col-12 contact-content-box__for__tel"><a href="https://www.facebook.com/lnr7042929" target="_blank" rel="noopener" class="contact-content-box__btn__get__in__touch__blue">Связаться</a></div>
+                        <div class="col-12 contact-content-box__for__tel"><a href="https://www.facebook.com/lnr7042929" target="_blank" rel="noopener" class="contact-content-box__btn__get__in__touch__blue">Перейти</a></div>
                     </div>
                 </div>
                 <div class="col-md-5 animated slideInUp">
