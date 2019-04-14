@@ -1,6 +1,5 @@
 import $ from 'jquery'
 import readmore from 'readmore-js/readmore.min'
-import axios from 'axios'
 
 $(document).ready(() => {
 	$(window).scroll(function () {

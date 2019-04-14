@@ -22,7 +22,6 @@ mix.js('resources/js/app.js', 'public/js')
 		processCssUrls: false
 	})
 	.copyDirectory('resources/images', 'public/images')
-	.browserSync('http://securityfirm/')
 
 
 

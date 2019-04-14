@@ -83,7 +83,7 @@
                 <div class="col col-lg-12 footer-block__contact__us mb-sm-3">
                     <h3 class="footer-block-contact-us__header__text">Свяжитесь с нами:</h3>
                     <ul class="list-group footer-block-contact-us__list__group">
-                        <li class="list-group-item footer-block-contact-us-list-group__link"><a href="mailto:lnr@online.ua">lnr@online.ua</a></li>
+                        <li class="list-group-item footer-block-contact-us-list-group__link"><a href="mailto:ln12r@online.ua">ln12r@online.ua</a></li>
                         <li class="list-group-item footer-block-contact-us-list-group__link"><a href="tel:+380912330113">+38(091) 233 01 13</a></li>
                         <li class="list-group-item footer-block-contact-us-list-group__link"><a href="tel:+380912530112">+38(091) 253 01 12</a></li>
                     </ul>

@@ -11,8 +11,7 @@
 }
 
 .footer-menu__nav__item__color__text a:hover {
-    color: var(--bluer);
-    opacity: .8;
+    color: #61dafb;
 }
 
 .footer-block-social-icons__btn__viber, .footer-block-social-icons__btn__facebook,
