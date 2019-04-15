@@ -30,7 +30,7 @@
                         <p class="content-services-info-block__paragraph col-lg-12">На сегодняшний день системы
                             видеонаблюдения – важная часть
                             повседневной жизни каждого человека.</p>
-                        <a class="content-services-info-block__btn__read__more" href="javascript:void(0);">Подробнее</a>
+                        <a class="content-services-info-block__btn__read__more" href="{{url('services#video_camera')}}">Подробнее</a>
                     </div>
                 </div>
                 <div class="content-services__info__block col-xl-2 my-2 py-md-3">
@@ -45,7 +45,7 @@
                             система играют очень значительную роль в жизни людей. лагодаря ей можно не беспокоиться за
                             свою безопасность
                             и безопасность своих близких, а также за сохранность ценностей. </p>
-                        <a class="content-services-info-block__btn__read__more" href="javascript:void(0);">Подробнее</a>
+                        <a class="content-services-info-block__btn__read__more" href="{{url('services#security')}}">Подробнее</a>
                     </div>
                 </div>
                 <div class="content-services__info__block col-xl-2 my-2 py-md-3">
@@ -60,7 +60,7 @@
                         <p class="content-services-info-block__paragraph col-lg-12">На сегодняшний день системы
                             видеонаблюдения – важная часть
                             повседневной жизни каждого человека.</p>
-                        <a class="content-services-info-block__btn__read__more" href="javascript:void(0);">Подробнее</a>
+                        <a class="content-services-info-block__btn__read__more" href="{{url('services#mini-ATS')}}">Подробнее</a>
                     </div>
                 </div>
                 <div class="content-services__info__block col-xl-2 my-2 py-md-3">
@@ -75,7 +75,7 @@
                         <p class="content-services-info-block__paragraph col-lg-12">Система контроля доступом (СКУД),
                             представляет собой невероятно
                             эффективную защиту от проникновения на тот или иной объект (помещение) посторонних лиц. </p>
-                        <a class="content-services-info-block__btn__read__more" href="javascript:void(0);">Подробнее</a>
+                        <a class="content-services-info-block__btn__read__more" href="{{url('services#ASC')}}">Подробнее</a>
                     </div>
                 </div>
                 <div class="content-services__info__block col-xl-2 my-2 py-md-3">
@@ -90,7 +90,7 @@
                         <p class="content-services-info-block__paragraph col-lg-12">Если подъезд дома или офиса не
                             охраняется, рано или поздно это повлечет за собой неприятности.
                             Домофонные системы призваны обезопасить людей от проникновения злоумышленников.</p>
-                        <a class="content-services-info-block__btn__read__more" href="javascript:void(0);">Подробнее</a>
+                        <a class="content-services-info-block__btn__read__more" href="{{url('services#video_intercom')}}">Подробнее</a>
                     </div>
                 </div>
             </div>
