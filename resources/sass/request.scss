@@ -3,7 +3,7 @@
   border: 1px solid #eaf0f6;
 
   .request-content-header-h1 {
-    color: var(--darker);
+    color: $darker;
     font-size: calcFluidFontSize(17, 28, 480, 1280);
   }
 
@@ -17,25 +17,25 @@
     .request-content__link__auth {
       font-size: calcFluidFontSize(14, 16, 480, 1280);
       background-color: #03A9F4;
-      color: var(--lighter);
+      color: $lighter;
       padding: 5px 30px;
       border-radius: .3rem;
       opacity: 0.7;
       transition: 0.4s;
       &:hover{
         opacity: 1;
-        box-shadow: var(--shadow__bold__darker);
+        box-shadow: $shadow__bold__darker;
         text-decoration: none;
         cursor: pointer;
       }
     }
   }
   .request-content__h3{
-    color: var(--darker);
+    color: $darker;
     font-size: calcFluidFontSize(18, 24, 480, 1280);
   }
   .request-content__h3__request {
-    color: var(--darker);
+    color: $darker;
     font-size: calcFluidFontSize(20, 28, 480, 1280);
     &>i{
       color: #03A9F4;
@@ -43,7 +43,7 @@
     }
   }
   .request-content__what__do__li, .request-content__what__do__p{
-    color: var(--darker);
+    color: $darker;
   }
 
   .request-content__what__do__li {
@@ -56,11 +56,11 @@
     }
 
     .form-request__style__input{
-      border-color: var(--bluer);
+      border-color: $bluer;
       background: #00cade12;
     }
     .form-request__text__label__bluer{
-      color: var(--darker);
+      color: $darker;
     }
   }
 }
