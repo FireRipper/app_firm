@@ -20,7 +20,7 @@
                     <img src="{{asset('images/main_content/services/dark_theme/video_camera/video_camera.png')}}"
                          alt="video_camera">
                 </div>
-                <div class="service-content-info-card__style__all__block col-sm-8 rounded">
+                <div id="video_camera" class="service-content-info-card__style__all__block col-sm-8 rounded">
                     <h3>Установка Систем Видеонаблюдения</h3>
                     <article>
                         <p>Локальная система — система, область действия и применения которой ограничена географически
@@ -44,7 +44,7 @@
                     <img src="{{asset('images/main_content/services/dark_theme/security_alarm/security.png')}}"
                          alt="security">
                 </div>
-                <div class="service-content-info-card__style__all__block col-sm-8 rounded">
+                <div id="security" class="service-content-info-card__style__all__block col-sm-8 rounded">
                     <h3>Охранная Система, Сигнализация</h3>
                     <article>
                         <p>Охранная система — автоматизированный комплекс для защиты различных объектов имущества
@@ -69,7 +69,7 @@
                     <img src="{{asset('images/main_content/services/dark_theme/automatic_telephone_station/ats.png')}}"
                          alt="mini-ATS">
                 </div>
-                <div class="service-content-info-card__style__all__block col-sm-8 rounded">
+                <div id="mini-ATS" class="service-content-info-card__style__all__block col-sm-8 rounded">
                     <h3>Установка Мини-АТС</h3>
                     <article>
                         <p>Офисная АТС, учрежденческая АТС (УАТС), мини-АТС (англ. PABX - Private Automatic Branch
@@ -95,9 +95,9 @@
                 </div>
                 <div class="col-sm-4 d-flex align-items-center justify-content-center service-content-info-card__image">
                     <img src="{{asset('images/main_content/services/dark_theme/access_control_system/ASC.png')}}"
-                         alt="video_camera">
+                         alt="ASC">
                 </div>
-                <div class="service-content-info-card__style__all__block col-sm-8 rounded">
+                <div id="ASC" class="service-content-info-card__style__all__block col-sm-8 rounded">
                     <h3>Установка Систем Контроля Доступа</h3>
                     <article>
                         <p>Система контроля доступом (СКУД), представляет собой невероятно эффективную защиту от
@@ -119,7 +119,7 @@
                     <img src="{{asset('images/main_content/services/dark_theme/video_intercom/video_intercom_dark.png')}}"
                          alt="video_intercom">
                 </div>
-                <div class="service-content-info-card__style__all__block col-sm-8 rounded">
+                <div id="video_intercom" class="service-content-info-card__style__all__block col-sm-8 rounded">
                     <h3>Установка Домофонных Систем</h3>
                     <article>
                         <p>Домофонная система является разновидностью систем ограничения доступа. Может быть оборудовано

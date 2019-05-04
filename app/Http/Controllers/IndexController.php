@@ -42,7 +42,7 @@ class IndexController extends Controller
     //show services page
     public function getServices()
     {
-        config('app.locale');
+        /*config('app.locale');*/
         $titles = 'Сервисы - Лаборатория нестандртных решений';
 
         return view('services')->with('titles', $titles);

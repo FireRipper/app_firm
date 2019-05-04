@@ -9,14 +9,12 @@
     <link rel="shortcut icon" href="{{asset('/favicon.ico')}}" type="image/x-icon">
     <link rel="icon" href="{{asset('/favicon.ico')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{asset('css/all.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css">
     <title>{{$titles}}</title>
 </head>
 <body>
 @yield('registration_content')
-
 @yield('login_content')
-<script type="application/javascript" src="{{asset('js/jquery.min.js')}}"></script>
 <script type="application/javascript" src="{{asset('js/app.js')}}"></script>
 <script type="application/javascript" src="{{asset('js/main.js')}}"></script>
 </body>
