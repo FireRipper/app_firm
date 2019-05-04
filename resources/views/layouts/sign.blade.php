@@ -14,9 +14,7 @@
 </head>
 <body>
 @yield('registration_content')
-
 @yield('login_content')
-<script type="application/javascript" src="{{asset('js/jquery.min.js')}}"></script>
 <script type="application/javascript" src="{{asset('js/app.js')}}"></script>
 <script type="application/javascript" src="{{asset('js/main.js')}}"></script>
 </body>
